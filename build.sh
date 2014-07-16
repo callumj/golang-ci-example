@@ -55,7 +55,6 @@ then
   mkdir -p builds/${VERSION}/windows_386 builds/${VERSION}/windows_amd64
 
   # fake our Go environment and force the Golang to resolve
-  GOPATH="${cur}/tmp/go"
   echo "Getting"
   GOPATH="${cur}/tmp/go" go get -d .
   echo "Starting build"
